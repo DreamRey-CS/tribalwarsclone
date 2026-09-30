@@ -1,0 +1,22 @@
+# Python / local tooling
+venv/
+__pycache__/
+*.pyc
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Secrets / local runtime (never commit)
+.env
+*.log
+cookies.txt
+
+# Smarty compiled templates (regenerated at build)
+app/templates_c/
+app/tribalwars/wereld1/templates_c/
+app/tribalwars/wereld1/admin/templates_c/

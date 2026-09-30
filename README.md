@@ -4,8 +4,6 @@ A self-hosted, Docker-based Tribal Wars style browser game (English default, Tur
 
 Original files credit: DSLAN / TribalWars LAN open-source release. All game IP belongs to its respective owners (InnoGames / Tribal Wars).
 
-reference https://gitlab.com/tribalwars/tribalwars
-
 ## Features
 
 - **One-click start** on Windows (`TribeRush.bat`) or any OS with Docker (`launch.sh`)
@@ -21,7 +19,7 @@ Full install guide: [`docs/INSTALL.md`](docs/INSTALL.md).
 ## Quick start
 
 ```bash
-git clone https://github.com/DreamRey-CS/tribalwarsclone tribe-rush
+git clone <your-repo-url> tribe-rush
 cd tribe-rush
 ./launch.sh
 ```
