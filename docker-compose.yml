@@ -1,0 +1,39 @@
+volumes:
+  persistent:
+  scripts:
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+    depends_on:
+      - mysql
+    restart: always
+  mysql:
+    build:
+      context: .
+      dockerfile: Dockerfile_db
+    # image: mysql:5.6.40
+    ports:
+      - 3306:3306
+    expose:
+      - '3306'
+    volumes:
+      - ./persistent:/usr/src/tribalwars:rw
+      - ./scripts:/usr/src/tribalwars-scripts:rw
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw
+      # The SQL dumps create and use these two databases explicitly.
+      MYSQL_DATABASE: pkmhunters_imp
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user1234
+    restart: always
+      # healthcheck:
+    #   test: /bin/bash -c "mysql -u root -p$$MYSQL_ROOT_PASSWORD mysql --silent --execute \"SHOW TABLES;\""
+    healthcheck:
+      test: "mysqladmin ping -h localhost"
+      interval: 1s
+      timeout: 1s
+      retries: 60

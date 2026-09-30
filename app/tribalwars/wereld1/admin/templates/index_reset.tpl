@@ -1,0 +1,3 @@
+<h2>Dünyayı Sıfırla</h2>
+<div class="panel danger-panel"><h3>Tam Sıfırlama</h3><p>Tüm dünya ve hesap verilerini siler. Bütün oyuncular yeniden kayıt olmak zorunda kalır.</p><a class="small-button danger-text" href='javascript:ask("Tüm hesaplar ve dünya verileri kalıcı olarak silinsin mi?","index.php?screen=reset&amp;action=reset")'>Tam Sıfırlamayı Başlat</a></div>
+<div class="panel danger-panel"><h3>Dünya Sıfırlama</h3><p>Oyuncu hesaplarını korur; köyler, birlikler ve dünya ilerlemesini sıfırlar.</p><a class="small-button danger-text" href='javascript:ask("Dünya verileri kalıcı olarak sıfırlansın mı?","index.php?screen=reset&amp;action=reset&amp;do=soft")'>Dünyayı Sıfırla</a></div>

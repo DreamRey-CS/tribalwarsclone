@@ -1,0 +1,5 @@
+FROM mysql:5.6.40
+
+EXPOSE 3306
+ADD scripts/initdb.sh /usr/src/tribalwars-scripts/
+RUN chmod +x /usr/src/tribalwars-scripts/initdb.sh

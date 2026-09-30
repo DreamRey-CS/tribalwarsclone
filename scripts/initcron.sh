@@ -1,0 +1,1 @@
+crontab -l 2>/dev/null | { cat; echo "* * * * * /usr/bin/php /usr/src/tribalwars/tribalwars/wereld1/daemons/event.php"; echo "* * * * * /usr/bin/php /usr/src/tribalwars/tribalwars/wereld1/daemons/bots.php"; echo "* * * * * /usr/bin/php /usr/src/tribalwars/tribalwars/wereld1/daemons/premium.php"; } | crontab -
