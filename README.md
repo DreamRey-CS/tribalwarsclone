@@ -19,7 +19,7 @@ Full install guide: [`docs/INSTALL.md`](docs/INSTALL.md).
 ## Quick start
 
 ```bash
-git clone <your-repo-url> tribe-rush
+git clone https://github.com/DreamRey-CS/tribalwarsclone tribe-rush
 cd tribe-rush
 ./launch.sh
 ```
