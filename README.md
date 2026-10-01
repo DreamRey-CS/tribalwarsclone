@@ -30,7 +30,7 @@ On Windows, just double-click `TribeRush.bat` (Docker Desktop must be running).
 
 ## First steps after install
 
-1. Register the admin account (first account, e.g. `sinan`).
+1. Register the admin account (first account, e.g. `test`).
 2. Put your username into `admin_users` in `app/tribalwars/wereld1/include/config.php` and change `master_pw` in the same file, then rebuild (`docker compose up -d --build`).
 3. Open the in-game **GOD MODE** link to max out your village, or manage everything from **ADMIN**.
 4. Add bots from Admin → Bots if you want more opponents.
